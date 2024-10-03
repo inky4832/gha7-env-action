@@ -16,18 +16,17 @@ jobs:
     steps: 
         - name: Run greeting_job1  
           # steps 레벨
-          
-          run: |  
-              echo greeting_job1 stpe LEVEL env : "$First_Name" , "${{env.First_Name}}"
-              echo greeting_job1 job LEVEL env : "$Greeting" , "${{env.Greeting}}"
-              echo greeting_job1 workflow LEVEL env : "$DAY_OF_WEEK" , "${{env.DAY_OF_WEEK}}" 
           env:
               First_Name: Mona
-              
+          run: |  
+              echo # greeting_job1 stpe LEVEL env : "$First_Name" , "${{env.First_Name}}"
+              echo # greeting_job1 job LEVEL env : "$Greeting" , "${{env.Greeting}}"
+              echo # greeting_job1 workflow LEVEL env : "$DAY_OF_WEEK" , "${{env.DAY_OF_WEEK}}" 
+
         - name: Run greeting_job2  
           run: |  
-              echo greeting_job2 stpe LEVEL env : "$First_Name" , "${{env.First_Name}}"
-              echo greeting_job2 job LEVEL env : "$Greeting" , "${{env.Greeting}}"
-              echo greeting_job2 workflow LEVEL env : "$DAY_OF_WEEK" , "${{env.DAY_OF_WEEK}}" 
+              echo # greeting_job2 stpe LEVEL env : "$First_Name" , "${{env.First_Name}}"
+              echo # greeting_job2 job LEVEL env : "$Greeting" , "${{env.Greeting}}"
+              echo # greeting_job2 workflow LEVEL env : "$DAY_OF_WEEK" , "${{env.DAY_OF_WEEK}}" 
   
   
