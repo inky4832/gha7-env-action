@@ -18,6 +18,7 @@ jobs:
           # steps 레벨
           env:
               First_Name: Mona
+          if: ${{ env.DAY_OF_WEEK == 'Monday' }}    
           run: |  
               echo  greeting_job1 stpe LEVEL env : "$First_Name" , "${{env.First_Name}}"
               echo  greeting_job1 job LEVEL env : "$Greeting" , "${{env.Greeting}}"
